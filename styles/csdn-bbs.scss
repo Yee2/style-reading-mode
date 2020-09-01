@@ -4,7 +4,13 @@
     body > div {
         display: none;
     }
-    body > div.container-box {
+    #navs, #ad_left, #ad_right, #csdn-toolbar, #post_feed_wrap { // 浮动导航、广告、顶栏、相关推荐
+        display: none;
+    }
+    .csdn_main_container {
+        display: block;
+    }
+    .csdn_main_container > div.container-box {
         display: block;
         // 左侧内容区
         #left-box {
@@ -12,15 +18,20 @@
             float: none !important;
             margin: 0 auto;
 
-            // 隐藏 "相关推荐feed"
-            > .mod_topic_wrap {
-                display: none;
-            }
 
         }
 
         // 右侧内容直接隐藏
         #rightList {
+            display: none !important;
+        }
+
+        // 隐藏 "相关推荐feed"
+        > .mod_topic_wrap {
+            display: none;
+        }
+
+        .footer-box { // 底部版权信息等等
             display: none;
         }
     }
@@ -34,8 +45,9 @@
         .hide_topic_box {
             display: none;
         }
+
         // 隐藏 标题 下面的 "一键查看最优答案" 按钮
-        #bbs_title_bar>.mod_fun_wrap{
+        #bbs_title_bar > .mod_fun_wrap {
             display: none;
         }
     }

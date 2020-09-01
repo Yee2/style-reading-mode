@@ -1,0 +1,9 @@
+@import "common";
+
+@-moz-document url-prefix("https://xiaozhuanlan.com/topic/") {
+    .xzl-main-container{
+        >.xzl-metabar-wrapper{
+            display: none;
+        }
+    }
+}

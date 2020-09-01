@@ -48,10 +48,16 @@
             .more-toolbox{
                 display: none;
             }
+            .template-box,.footer-box{ // 底部备案信息、联系信息等等. 版权声明
+                display: none;
+            }
         }
     }
     // 禁用登录 mask
     #passportbox,.login-mark{
         display:none !important;
+    }
+    .recommend-box { // 去广告
+        display: none;
     }
 }

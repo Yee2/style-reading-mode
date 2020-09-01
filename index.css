@@ -109,9 +109,16 @@
   .main_father > #mainBox > main .more-toolbox {
     display: none;
   }
+  .main_father > #mainBox > main .template-box, .main_father > #mainBox > main .footer-box {
+    display: none;
+  }
 
   #passportbox, .login-mark {
     display: none !important;
+  }
+
+  .recommend-box {
+    display: none;
   }
 }
 @-moz-document url-prefix("https://bbs.csdn.net/topics/") {
@@ -119,17 +126,28 @@
     display: none;
   }
 
-  body > div.container-box {
+  #navs, #ad_left, #ad_right, #csdn-toolbar, #post_feed_wrap {
+    display: none;
+  }
+
+  .csdn_main_container {
     display: block;
   }
-  body > div.container-box #left-box {
+
+  .csdn_main_container > div.container-box {
+    display: block;
+  }
+  .csdn_main_container > div.container-box #left-box {
     float: none !important;
     margin: 0 auto;
   }
-  body > div.container-box #left-box > .mod_topic_wrap {
+  .csdn_main_container > div.container-box #rightList {
+    display: none !important;
+  }
+  .csdn_main_container > div.container-box > .mod_topic_wrap {
     display: none;
   }
-  body > div.container-box #rightList {
+  .csdn_main_container > div.container-box .footer-box {
     display: none;
   }
 
