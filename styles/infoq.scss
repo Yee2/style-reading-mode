@@ -8,6 +8,7 @@
 
         .inner-content {
             padding-top: 0;
+
             > div:last-of-type {
                 display: none;
             }
@@ -16,16 +17,20 @@
                 display: none;
             }
 
-            .article-fixed-operation {
+            .sub-nav-wrap,.article-fixed-operation {
                 display: none;
             }
 
             .layout-content {
                 @include container;
 
-                .main-content {
+                .content-main {
                     @include box-block;
-                    .like-section,.operation-btn-wrapper,.com-topic-tag,.article-advertising{
+
+                    .article-widget-foot{
+                        display: none;
+                    }
+                    .slot-extra,.like-section, .operation-btn-wrapper, .com-topic-tag, .article-advertising {
                         display: none;
                     }
                 }

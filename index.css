@@ -301,7 +301,7 @@
   #layout .inner-content .topic-nav {
     display: none;
   }
-  #layout .inner-content .article-fixed-operation {
+  #layout .inner-content .sub-nav-wrap, #layout .inner-content .article-fixed-operation {
     display: none;
   }
   #layout .inner-content .layout-content {
@@ -311,7 +311,7 @@
   #layout .inner-content .layout-content > div {
     display: none;
   }
-  #layout .inner-content .layout-content .main-content {
+  #layout .inner-content .layout-content .content-main {
     display: block;
     width: 960px;
     max-width: 100% !important;
@@ -320,7 +320,10 @@
     margin: 0;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
-  #layout .inner-content .layout-content .main-content .like-section, #layout .inner-content .layout-content .main-content .operation-btn-wrapper, #layout .inner-content .layout-content .main-content .com-topic-tag, #layout .inner-content .layout-content .main-content .article-advertising {
+  #layout .inner-content .layout-content .content-main .article-widget-foot {
+    display: none;
+  }
+  #layout .inner-content .layout-content .content-main .slot-extra, #layout .inner-content .layout-content .content-main .like-section, #layout .inner-content .layout-content .content-main .operation-btn-wrapper, #layout .inner-content .layout-content .content-main .com-topic-tag, #layout .inner-content .layout-content .content-main .article-advertising {
     display: none;
   }
 }
@@ -401,6 +404,36 @@
   }
 
   .article-list {
+    display: none;
+  }
+}
+@-moz-document url("https://www.cnbeta.com/") {
+  body > *:not(.main-wrap):not(#goTop):not(.cnbeta-fullBanne) {
+    display: none;
+    height: 0;
+  }
+
+  .main-wrap > div:not(.cnbeta-update) {
+    display: none;
+  }
+
+  .cnbeta-update .cnbeta-update-list, .cnbeta-update .cnbeta-article {
+    width: 100%;
+  }
+  .cnbeta-update .cnbeta-home-side {
+    display: none;
+  }
+}
+@-moz-document url-prefix("https://www.cnbeta.com/articles/") {
+  body > *:not(.main-wrap):not(#goTop) {
+    display: none;
+    height: 0;
+  }
+
+  .cnbeta-update .cnbeta-article {
+    width: 100%;
+  }
+  .cnbeta-update .cnbeta-home-side {
     display: none;
   }
 }
